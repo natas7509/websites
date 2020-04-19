@@ -1,4 +1,5 @@
 @import "config";
+@import "buttons";
 @import "utilities";
 
 *,
@@ -12,21 +13,16 @@
 html {
   font-family: "Montserrat", sans-serif;
   color: $dark-color;
-  font-size: 10px;
   box-sizing: border-box;
-}
-
-body {
-  background-color: $red-color;
 }
 
 header {
   width: 100%;
   height: 5rem;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 nav {
@@ -34,31 +30,120 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom: 1px solid $border-color;
 
   .nav-brand {
-    width: 3rem;
+    width: 2rem;
   }
 
   .menu-icons i {
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: $light-color;
     cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
   }
 
   .close i {
     color: $secondary-color;
   }
 
+  .nav-list.active {
+    right: 0;
+    background: $primary-color;
+  }
+
   .nav-list {
     display: flex;
     flex-direction: column;
-    background-color: $primary-color;
+    opacity: 0.97;
     width: 25rem;
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 28px;
+    right: -26rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 650ms ease-in-out;
+  }
+
+  .nav-item {
+    margin: 2rem 0;
+    .nav-link {
+      color: $light-color;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  background: linear-gradient(
+      135deg,
+      rgba(147, 3, 46, 0.5) 0%,
+      rgba(161, 10, 56, 0.6) 100%
+    ),
+    url(../images/header-bg.jpg) no-repeat center/cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+
+  &__container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+  }
+
+  &__main-message {
+    height: 50vh;
+    color: $light-color;
+    width: 100%;
+    max-width: 50rem;
+    padding: 1rem;
+    transform: translateY(10%);
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 1rem 0;
+      text-transform: uppercase;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4.7rem;
+    background: url("../images/wave-small.png") center/cover no-repeat;
+  }
+
+  .btn-primary {
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  .btn-primary:hover {
+    background-color: rgb(118, 167, 45);
+    color: $light-color;
   }
 }
