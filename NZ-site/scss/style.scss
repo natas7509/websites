@@ -18,7 +18,7 @@ html {
 }
 
 header {
-  width: 100%;
+  width: 10%;
   height: 5rem;
   position: absolute;
   top: 0;
@@ -287,16 +287,16 @@ footer {
   padding: 2.5rem 0;
   text-align: center;
   p {
-    color: $primary-color;
+    color: yellow;
     font-size: 1.2rem;
   }
 }
 
 // Media Queries Coming in From media.scss
-@media (max-width: 500px) {
-  footer {
-    p {
-      color: red;
-    }
-  }
-}
+// @media (min-width: 500px) {
+//   footer {
+//     p {
+//       color: red;
+//     }
+//   }
+// }
