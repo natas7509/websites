@@ -1,17 +1,19 @@
-// .container {
-//   width: 100%;
-//   max-width: 98rem;
-//   margin: 0 auto;
-//   padding: 0 1.5rem;
-//   overflow: hidden;
-// }
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
 
 h1,
-h2,
-h3,
-h4,
-h5 {
+h2 {
   font-family: "Lato", sans-serif;
+  letter-spacing: 1.2px;
+}
+
+h3 {
+  font-size: 1.6rem;
 }
 
 ul {
@@ -20,10 +22,12 @@ ul {
 
 a {
   text-decoration: none;
+  font-size: 1.4rem;
 }
 
 p {
-  line-height: 1.6rem;
+  line-height: 1.9rem;
+  font-size: 1.4rem;
 }
 
 img {
