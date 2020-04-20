@@ -1,4 +1,5 @@
 @import "config";
+@import "media";
 @import "buttons";
 @import "utilities";
 
@@ -12,7 +13,6 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  color: $dark-color;
   box-sizing: border-box;
   font-size: 10px;
 }
@@ -106,6 +106,7 @@ nav {
     transform: translateY(10%);
 
     h3 {
+      font-size: 1.4rem;
       font-weight: 300;
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
@@ -253,7 +254,7 @@ nav {
         margin: 2rem 0;
       }
 
-      h1 {
+      h3 {
         font-size: 1.6rem;
       }
     }
@@ -276,14 +277,26 @@ nav {
 
   .adventure-grid-item {
     p {
-      color: $dark-color;
+      color: $primary-color;
     }
   }
 }
 
-.adventure-grid .test {
-  border: 2px solid #000;
-  width: 80px;
-  height: 2rem;
-  margin: 0.5rem auto 2rem auto;
+// Footer
+footer {
+  padding: 2.5rem 0;
+  text-align: center;
+  p {
+    color: $primary-color;
+    font-size: 1.2rem;
+  }
+}
+
+// Media Queries Coming in From media.scss
+@media (max-width: 500px) {
+  footer {
+    p {
+      color: red;
+    }
+  }
 }
