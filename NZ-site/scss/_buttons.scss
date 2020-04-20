@@ -13,3 +13,18 @@
 .btn-primary {
   @extend %btn;
 }
+
+// Primary Button which inherits the %btn attributes
+.btn-primary {
+  background-color: $secondary-color;
+  color: $primary-color;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.btn-primary:hover {
+  background-color: rgb(118, 167, 45);
+  color: $light-color;
+}

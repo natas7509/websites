@@ -131,45 +131,14 @@ nav {
     height: 4.7rem;
     background: url("../images/wave-small.png") center/cover no-repeat;
   }
-
-  .btn-primary {
-    background-color: $secondary-color;
-    color: $primary-color;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin: 1rem 0;
-  }
-
-  .btn-primary:hover {
-    background-color: rgb(118, 167, 45);
-    color: $light-color;
-  }
 }
 
-// Epreience the Outdoors
+// Expreience the Outdoors
 
 .experience-outdoors {
   padding: 0;
   z-index: -2;
   margin-top: 2rem;
-
-  .title-heading {
-    text-align: center;
-    margin-bottom: 4rem;
-
-    h3 {
-      font-weight: 300;
-      font-family: "Montserrat", sans-serif;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 1rem 0 0.4rem;
-      text-transform: uppercase;
-      font-size: 2.3rem;
-    }
-  }
 
   .activities-grid {
     display: grid;
@@ -239,6 +208,16 @@ nav {
   background: url("../images/wave-small-reversed.png") no-repeat center/cover;
 }
 
+.testimonials::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4.7rem;
+  background: url("../images/wave-small.png") no-repeat center/cover;
+}
+
 .testimonials {
   position: relative;
   display: flex;
@@ -253,10 +232,11 @@ nav {
         rgba(0, 0, 0, 0.7) 0%,
       rgba(161, 10, 56, 0.9) 100%
     ),
-    url("../images/testimonials-bg.jpg") no-repeat center/cover;
+    url("../images/testimonials-bg.jpg") no-repeat center fixed;
 
   .testimonial {
     color: $light-color;
+    width: 100%;
     &-text-box {
       i {
         font-size: 5rem;
@@ -266,8 +246,8 @@ nav {
 
     .testimonial-customer {
       img {
-        width: 150px;
-        height: 150px;
+        width: 15rem;
+        height: 15rem;
         border: 2px solid $secondary-color;
         border-radius: 100%;
         margin: 2rem 0;
@@ -278,4 +258,32 @@ nav {
       }
     }
   }
+}
+
+// Begin Adventure
+.begin-adventure {
+  padding: 0;
+  z-index: -2;
+  margin-top: 2rem;
+  position: relative;
+
+  .adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .adventure-grid-item {
+    p {
+      color: $dark-color;
+    }
+  }
+}
+
+.adventure-grid .test {
+  border: 2px solid #000;
+  width: 80px;
+  height: 2rem;
+  margin: 0.5rem auto 2rem auto;
 }
