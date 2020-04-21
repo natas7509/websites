@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 98rem;
+  max-width: 110rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -12,7 +12,7 @@
   color: $primary-color;
 
   .bottom-line {
-    border: solid 2px $primary-color;
+    border: solid 1px $red-color;
     // max-width: 20%;
     width: 15vw;
     border-radius: 2px;

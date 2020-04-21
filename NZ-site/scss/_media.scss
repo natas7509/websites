@@ -3,12 +3,19 @@
   .hero {
     .hero__main-message {
       color: $light-color;
-      transform: translateY(40%);
+      transform: translateY(15%);
     }
   }
 }
 
-@media screen and (min-width: 470px) {
+@media screen and (min-width: 370px) {
+  .hero {
+    .hero__main-message {
+      color: $light-color;
+      transform: translateY(35%);
+    }
+  }
+
   .hero::before {
     height: 9.4rem;
     background: url("../images/wave-medium.png") cover;
@@ -92,12 +99,19 @@
 
     .hero__main-message {
       transform: translateY(50%);
+      text-align: left;
     }
   }
 
   .testimonial-text-box {
     max-width: 65rem;
     margin: auto;
+  }
+
+  .begin-adventure {
+    .adventure-grid-item {
+      text-align: left;
+    }
   }
 }
 
@@ -106,9 +120,12 @@
     width: 100%;
     height: 120vh;
 
-    .testimonial-text-box {
-      max-width: 75rem;
-      margin: auto;
+    .container {
+      display: flex;
+      .testimonial-text-box {
+        max-width: 75rem;
+        margin: auto;
+      }
     }
   }
 
@@ -160,6 +177,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
   .hero {
     height: 100vh;
   }
