@@ -1,4 +1,6 @@
 # Queenstown New Zealand Site
+ Website here: https://natas7509.github.io/websites/NZ-site/
+ 
  This a site I built in Sass with inspiration from the developer https://www.patreon.com/juliocodes
  This site will be placed on my portfolio at https://www.jondarlingdev.com
  
