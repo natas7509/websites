@@ -6,9 +6,12 @@
       transform: translateY(15%);
     }
   }
+  .testimonials {
+    height: 130vh;
+  }
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 411px) {
   .hero {
     .hero__main-message {
       color: $light-color;
@@ -19,6 +22,10 @@
   .hero::before {
     height: 9.4rem;
     background: url("../images/wave-medium.png") cover;
+  }
+
+  .testimonials {
+    height: 120vh;
   }
 
   .testimonials::before {
