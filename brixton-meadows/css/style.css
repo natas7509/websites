@@ -178,20 +178,20 @@ nav {
 /* Backgorund Images */
 
 .slide:first-child {
-  background: url("../images/splashPic.jpg") no-repeat center top/cover;
+  background: url("/images/splashPic.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(2) {
-  background: url("../images/shu-xin-.jpg") no-repeat center top/cover;
+  background: url("/images/shu-xin-.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(3) {
-  background: url("../images/LittleBell.jpg") no-repeat center top/cover;
+  background: url("/images/LittleBell.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(4) {
-  background: url("../images/light-streamer.jpg") no-repeat center top/cover;
+  background: url("/images/light-streamer.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(5) {
-  background: url("../images/lanterns.jpg") no-repeat center top/cover;
+  background: url("/images/lanterns.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(6) {
-  background: url("../images/JoshBrothers.jpg") no-repeat center center/cover;
+  background: url("/images/JoshBrothers.jpg") no-repeat center center/cover;
 }
