@@ -1,0 +1,22 @@
+.container {
+  width: 100;
+  max-width: 128rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+* {
+  /* RGB */
+  --primary-color: rgba(226, 32, 39, 1);
+  --dark-color: rgba(36, 36, 35, 1);
+  --yellow-color: rgba(247, 181, 56, 1);
+  --light-color: rgba(244, 244, 244, 1);
+  --blue-color: rgba(52, 73, 102, 1);
+
+  /* HEX */
+  --primary-color: #e22027ff;
+  --dark-color: #242423ff;
+  --yellow-color: #f7b538ff;
+  --light-color: #f4f4f4ff;
+  --blue-color: #344966ff;
+}

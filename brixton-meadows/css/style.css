@@ -1,3 +1,9 @@
+@import "slider.css";
+@import "nav.css";
+@import "config.css";
+@import "utilities.css";
+@import "media.css";
+
 *,
 *::before,
 *::after {
@@ -12,74 +18,58 @@ html {
   font-size: 10px;
 }
 
+body {
+  font-size: 1.6rem;
+  color: var(--dark-color);
+}
+
 header {
   width: 100%;
-  height: 5rem;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
-.nav-brand img {
-  width: 70px;
-  height: 70px;
-}
-
+/* NAV MOBILE */
 nav {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  margin: 0 2rem;
 }
 
-.nav-item {
-  margin: 2rem 0;
-}
-
-.nav-link {
-  color: aqua;
-  text-transform: uppercase;
-}
-
-.nav-brand {
-  width: 3rem;
+.nav-brand img {
+  width: 7rem;
+  height: 7rem;
 }
 
 .menu-icons i {
   font-size: 2.5rem;
-  color: aqua;
+  color: var(--light-color);
   cursor: pointer;
 }
 
 .close {
   position: absolute;
-  top: 1.5rem;
-  right: 2.5rem;
-}
-
-.open {
-  position: absolute;
-  top: 1.5rem;
-  right: 2.5rem;
-  color: aliceblue;
+  top: 3.4rem;
+  right: 3.8rem;
 }
 
 .close i {
-  color: rgb(133, 26, 118);
+  color: var(--light-color);
 }
 
 .nav-list.active {
   right: 0;
-  color: aqua;
+  background-color: var(--primary-color);
 }
 
 .nav-list {
   display: flex;
   flex-direction: column;
-  opacity: 0.97;
   width: 25rem;
   height: 100vh;
   position: fixed;
@@ -89,109 +79,29 @@ nav {
   justify-content: center;
   z-index: 5;
   transition: all 650ms ease-in-out;
-  background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* SLIDER */
-.slider {
-  position: relative;
-  margin-top: 90px;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+.nav-link {
+  color: var(--light-color);
 }
 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+.nav-item {
+  margin: 2rem 0;
 }
 
-.slide.current {
-  opacity: 1;
+/* ARTISTS SECTION */
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-column-gap: 2rem;
+  margin: 3rem 0;
 }
 
-.slide .content {
-  position: absolute;
-  bottom: 70px;
-  left: -600px;
-  opacity: 0;
-  width: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333;
-  padding: 35px;
+.artists-item img,
+p {
+  margin: 1rem 0;
 }
 
-.slide .content h1 {
-  margin-bottom: 10px;
-}
-
-.slide.current .content {
-  opacity: 1;
-  transform: translateX(600px);
-  transition: all 0.7s ease-in-out 0.3s;
-}
-
-.buttons button#next {
-  position: absolute;
-  top: 40%;
-  right: 15px;
-}
-
-.buttons button#prev {
-  position: absolute;
-  top: 40%;
-  left: 15px;
-}
-
-.buttons button {
-  border: 2px solid #fff;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-  padding: 13px 15px;
-  border-radius: 50%;
-  outline: none;
-}
-
-.buttons button:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-@media (max-width: 500px) {
-  .slide .content {
-    bottom: -300px;
-    left: 0;
-    width: 100%;
-  }
-
-  .slide.current .content {
-    transform: translateY(-300px);
-  }
-}
-
-/* Backgorund Images */
-
-.slide:first-child {
-  background: url("../images/splashPic.jpg") no-repeat center top/cover;
-}
-.slide:nth-child(2) {
-  background: url("../images/shu-xin-.jpg") no-repeat center top/cover;
-}
-.slide:nth-child(3) {
-  background: url("..//images/LittleBell.jpg") no-repeat center top/cover;
-}
-.slide:nth-child(4) {
-  background: url("../images/light-streamer.jpg") no-repeat center top/cover;
-}
-.slide:nth-child(5) {
-  background: url("../images/DominionOne.jpg") no-repeat center top/cover;
-}
-.slide:nth-child(6) {
-  background: url("../images/JoshBrothers.jpg") no-repeat center center/cover;
-}
+/* .artists-item img {
+  margin: 2rem 0;
+} */

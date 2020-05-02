@@ -1,0 +1,21 @@
+img {
+  width: 100%;
+}
+
+.section-heading {
+  font-size: 4rem;
+  text-align: center;
+  /* padding: 2rem 0; */
+}
+
+span {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

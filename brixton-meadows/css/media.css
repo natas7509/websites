@@ -1,0 +1,68 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    height: 7rem;
+    background-color: rgba(36, 36, 35, 0.5);
+  }
+
+  nav .nav-list {
+    width: initial;
+    height: initial;
+    background: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+  }
+
+  nav .menu-icons.open i {
+    font-size: 4vmin;
+  }
+
+  nav .nav-item {
+    margin: 0 2.5rem;
+  }
+  nav .nav-link,
+  .current {
+    position: relative;
+    color: var(--light-color);
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .menu-icons i {
+    display: none;
+  }
+
+  .nav-link::before,
+  .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-color: red;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 350ms;
+  }
+
+  .current::before {
+    transform: scaleX(1);
+  }
+}

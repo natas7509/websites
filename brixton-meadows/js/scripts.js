@@ -18,7 +18,7 @@ selectElement(".close,.closeLink").addEventListener("click", (e) => {
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
-const auto = true; // Auto scroll
+const auto = false; // Auto scroll
 const intervalTime = 4000;
 let slideInterval;
 
