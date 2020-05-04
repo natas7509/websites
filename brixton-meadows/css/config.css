@@ -1,9 +1,9 @@
-/* .container {
+.container {
   width: 100%;
   max-width: 110rem;
   margin: 0 auto;
   overflow: hidden;
-} */
+}
 
 * {
   /* RGB */
@@ -13,6 +13,13 @@
   --light-color: rgba(244, 244, 244, 1);
   --blue-color: rgba(52, 73, 102, 1);
   --border-color: rgba(108, 108, 109, 0.4);
+
+  /* OPACITIES */
+  --primary-opacity: rgba(226, 32, 39, 0.5);
+  --dark-opacity: rgba(36, 36, 35, 0.3);
+  --yellow-opacity: rgba(247, 181, 56, 0.5);
+  --light-opacity: rgba(244, 244, 244, 0.5);
+  --blue-opacity: rgba(52, 73, 102, 0.5);
 
   /* HEX */
   --primary-color: #e22027ff;

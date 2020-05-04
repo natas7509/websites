@@ -11,15 +11,14 @@
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 768px) {
   nav {
     height: 7rem;
     background-color: rgba(36, 36, 35, 0.5);
   }
 
   nav .nav-brand {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
   }
 
   nav .nav-list {
@@ -72,6 +71,19 @@
     transform: scaleX(1);
   }
 
+  /* ARTISTS-GRID */
+  .artists-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+  }
+
+  .artists-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    flex: 1 0 20px;
+  }
+
   /* SOCIAL ICONS */
   #social .social i {
     margin: 0 3rem;
@@ -95,6 +107,7 @@
   /* ARTISTS-GRID */
   .artists-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
   }
 
   /* SOCIAL ICONS */

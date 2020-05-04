@@ -58,7 +58,7 @@
 
 .buttons button {
   border: 2px solid #fff;
-  background-color: transparent;
+  background-color: var(--dark-opacity);
   color: #fff;
   cursor: pointer;
   padding: 13px 15px;
