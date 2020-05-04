@@ -1,4 +1,17 @@
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 420px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+    border-top-right-radius: 0;
+  }
+}
+
+@media screen and (min-width: 420px) {
   nav {
     height: 7rem;
     background-color: rgba(36, 36, 35, 0.5);
@@ -67,12 +80,7 @@
   /* FOOTER */
   .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-column-gap: 2rem;
-  }
-
-  #footer .copy p {
-    font-size: 1.4rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -83,6 +91,10 @@
     max-width: 110rem;
     margin: 0 auto;
     overflow: hidden;
+  }
+  /* ARTISTS-GRID */
+  .artists-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* SOCIAL ICONS */

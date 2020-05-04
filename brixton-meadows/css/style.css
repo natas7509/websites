@@ -1,7 +1,6 @@
 /* ========================= MOBILE ===================================== */
 
 @import "slider.css";
-@import "nav.css";
 @import "config.css";
 @import "utilities.css";
 @import "media.css";
@@ -15,12 +14,12 @@
 }
 
 html {
-  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   font-size: 10px;
 }
 
 body {
+  font-family: "Crimson Text", serif;
   font-size: 1.6rem;
   line-height: 1.5;
   color: var(--dark-color);
@@ -32,10 +31,6 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-}
-
-.container {
-  padding: 0 1rem;
 }
 
 /* NAV MOBILE */
@@ -95,23 +90,13 @@ nav {
   margin: 2rem 0;
 }
 
-/* SLIDER PHONE */
-
-.slide .content {
-  bottom: -300px;
-  left: 0;
-  width: 100%;
-  border-top-right-radius: 0;
-}
-
-.slide.current .content {
-  transform: translateY(-300px);
-}
-
 /* ARTISTS SECTION */
+
+.featured-artists {
+  margin: 0 2rem;
+}
 .artists-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   grid-column-gap: 4rem;
   margin: 3rem 0;
 }
@@ -132,7 +117,7 @@ p {
 
 #social .social i {
   font-size: minmax(1rem, 3rem);
-  padding: 0 3rem;
+  padding: 0 2rem;
   transition: 500ms ease-in-out;
 }
 
@@ -172,12 +157,15 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3rem 0;
+  margin-bottom: 1rem;
 }
 
 #footer .list ul li {
   padding: 0.6rem 0;
   color: var(--light-color);
+  font-family: "montserrat", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 .light {
@@ -190,8 +178,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
-  padding: 2rem 0;
+  font-size: 1.24rem;
+  padding: 2rem 1rem;
   border-top: solid 1px var(--border-color);
   color: var(--light-color);
 }
