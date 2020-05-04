@@ -1,12 +1,12 @@
 @media screen and (max-width: 420px) {
   .slide .content {
-    bottom: -300px;
+    bottom: -500px;
     left: 0;
     width: 100%;
   }
 
   .slide.current .content {
-    transform: translateY(-300px);
+    transform: translateY(-530px);
     border-top-right-radius: 0;
   }
 }
@@ -80,7 +80,6 @@
   .artists-item {
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
     flex: 1 0 20px;
   }
 
