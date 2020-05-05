@@ -11,6 +11,7 @@
   }
 }
 
+/*  ===================================== IPAD REGULAR ==========================  */
 @media screen and (min-width: 768px) {
   nav {
     height: 7rem;
@@ -94,15 +95,15 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* =====================ARTISTS.HTML PAGE================================== */
+  /* ARTISTS.HTML */
   #showcase {
     height: 90vh;
-    background: var(--dark-color) url("/images/img10.jpg") no-repeat
+    background: var(--dark-color) url("./images/img10.jpg") no-repeat
       center/cover;
   }
 }
 
-/* IPAD PRO (12.9 INCH) */
+/*  ===================================== IPAD PRO 10.5 INCH ==========================  */
 @media screen and (min-width: 1024px) {
   .container {
     width: 100%;
@@ -122,7 +123,7 @@
     font-size: 2.5vw;
   }
 
-  /* =====================ARTISTS.HTML PAGE================================== */
+  /* ARTISTS.HTML */
   #showcase {
     height: 90vh;
     background: var(--dark-color) url("../images/DominionOne.jpg") no-repeat
