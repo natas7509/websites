@@ -96,11 +96,11 @@
   }
 
   /* ARTISTS.HTML */
-  #showcase {
+  /* #showcase {
     height: 90vh;
     background: var(--dark-color) url("../images/img10.jpg") no-repeat
       center/cover;
-  }
+  } */
 }
 
 /*  ===================================== IPAD PRO 10.5 INCH ==========================  */
@@ -124,7 +124,7 @@
   }
 
   /* ARTISTS.HTML */
-  #showcase {
+  /* #showcase {
     height: 90vh;
     background: var(--dark-color) url("../images/DominionOne.jpg") no-repeat
       center/cover;
@@ -133,5 +133,5 @@
   #showcase .showcase-content {
     justify-content: flex-end;
     margin-left: 3rem;
-  }
+  } */
 }
