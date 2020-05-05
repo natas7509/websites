@@ -125,6 +125,8 @@
   /* =====================ARTISTS.HTML PAGE================================== */
   #showcase {
     height: 100vh;
+    background: var(--dark-color) url("..//images/artist.jpg") no-repeat
+      center/cover;
   }
 
   #showcase .showcase-content {
