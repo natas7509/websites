@@ -3,6 +3,7 @@
 @import "slider.css";
 @import "config.css";
 @import "utilities.css";
+@import "artists.css";
 @import "media.css";
 
 *,
@@ -38,8 +39,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  margin: 0 2rem;
+  margin-top: 1rem;
+  /* margin: 0 2rem; */
 }
 
 .nav-brand {
@@ -98,7 +99,6 @@ nav {
 }
 .artists-grid {
   display: grid;
-  /* grid-column-gap: 4rem; */
   margin: 3rem 0;
 }
 
@@ -113,7 +113,6 @@ p {
   justify-content: center;
   align-items: center;
   height: 10rem;
-  margin-bottom: 3rem;
 }
 
 #social .social i {

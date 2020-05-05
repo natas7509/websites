@@ -1,0 +1,32 @@
+/* main image credit by tony hernandez on Unsplash */
+
+/* MOBILE */
+
+.showcase {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fixed-image {
+  background: url("../images/artist.jpg") no-repeat top center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+#artists .section-heading {
+  margin: 2rem 0;
+  /* padding: 2rem; */
+}
+
+#artists .bill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 1rem;
+  z-index: 100;
+}
+
+.bill-card img {
+  width: 100%;
+  height: 100%;
+}
