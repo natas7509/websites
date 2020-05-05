@@ -55,8 +55,9 @@
     <main>
         <section id="showcase">
             <div class="showcase-content">
-                <h1 class="section-heading"><span>Patrizia</span> Romano</h1>
-                <h4>
+                <h1 class="section-heading rellax" data-rellax-xs-speed="3" data-rellax-speed="5"><span>Patrizia</span>
+                    Romano</h1>
+                <h4 class="rellax" data-rellax-xs-speed="2" data-rellax-speed="4">
                     Mainstage - Sunday - 9pm
                 </h4>
             </div>
@@ -153,15 +154,23 @@
                     </ul>
                 </div>
             </div>
-
             <div class="copy">
-
                 <p>&copy; 2020 - jondarlingdev.com - All Rights Reserved</p>
             </div>
         </div>
     </footer>
 
 
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+        integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI=" crossorigin="anonymous"></script>
+    <script>
+        // Set wrapper to .custom-element instead of the body
+        var rellax = new Rellax('.rellax');
+    </script>
     <script src="js/scripts.js"></script>
 
 </body>
