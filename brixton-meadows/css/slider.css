@@ -57,7 +57,7 @@
 }
 
 .buttons button {
-  border: 2px solid #fff;
+  border: 2px solid var(--light-color);
   background-color: var(--dark-opacity);
   color: #fff;
   cursor: pointer;
@@ -67,8 +67,8 @@
 }
 
 .buttons button:hover {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--light-color);
+  color: var(--dark-opacity);
 }
 
 /* Backgorund Images */
@@ -80,7 +80,7 @@
   background: url("../images/shu-xin-.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(3) {
-  background: url("..//images/LittleBell.jpg") no-repeat center top/cover;
+  background: url("../images/LittleBell.jpg") no-repeat center top/cover;
 }
 .slide:nth-child(4) {
   background: url("../images/light-streamer.jpg") no-repeat center top/cover;
