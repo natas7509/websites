@@ -3,8 +3,11 @@
 /* MOBILE */
 
 #showcase {
-  /* background: var(--dark-color) url("../images/artist.jpg") no-repeat
-    center/cover; */
+  background: url(/images/artist.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 90vh;
   position: relative;
   color: var(--light-color);
