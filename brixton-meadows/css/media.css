@@ -104,7 +104,7 @@
 }
 
 /*  ===================================== IPAD PRO 10.5 INCH ==========================  */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   .container {
     width: 100%;
     max-width: 110rem;
