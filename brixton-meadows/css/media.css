@@ -95,17 +95,8 @@
   }
 
   /* =====================ARTISTS.HTML PAGE================================== */
-  /* .showcase {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  } */
-
-  .fixed-image {
-    background: url("../images/artist.jpg") no-repeat fixed center/cover;
+  #showcase {
     height: 90vh;
-    width: 100%;
-    /* overflow: hidden; */
   }
 }
 
@@ -127,5 +118,15 @@
   #social .social i {
     margin: 0 5rem;
     font-size: 2.5vw;
+  }
+
+  /* =====================ARTISTS.HTML PAGE================================== */
+  #showcase {
+    height: 100vh;
+  }
+
+  #showcase .showcase-content {
+    justify-content: flex-end;
+    margin-left: 3rem;
   }
 }

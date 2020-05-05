@@ -2,15 +2,36 @@
 
 /* MOBILE */
 
-.fixed-image {
-  background: url("../images/artist.jpg") no-repeat center/cover;
-  height: 60vh;
-  width: 100%;
+#showcase {
+  background: var(--dark-color) url("../images/artist.jpg") no-repeat
+    center/cover;
+  height: 90vh;
+  position: relative;
+  color: var(--light-color);
+  background-attachment: fixed;
 }
 
-#artists .section-heading {
-  margin: 2rem 0;
-  /* padding: 2rem; */
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  padding: 1rem;
+
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#showcase .showcase-content h4 {
+  text-transform: uppercase;
+  margin-bottom: 6rem;
 }
 
 #artists .bill-grid {
