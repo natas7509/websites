@@ -98,7 +98,7 @@
   /* ARTISTS.HTML */
   #showcase {
     height: 90vh;
-    background: var(--dark-color) url("./images/img10.jpg") no-repeat
+    background: var(--dark-color) url("../images/img10.jpg") no-repeat
       center/cover;
   }
 }
