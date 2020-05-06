@@ -45,4 +45,9 @@
 .bill-card img {
   width: 100%;
   height: 100%;
+  transition: 600ms ease-in-out;
+}
+
+.bill-card img:hover {
+  transform: scale(1.2);
 }
