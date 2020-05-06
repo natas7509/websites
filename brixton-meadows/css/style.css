@@ -4,7 +4,7 @@
 @import "config.css";
 @import "utilities.css";
 @import "artists.css";
-/* @import "media.css"; */
+@import "media.css";
 
 *,
 *::before,
