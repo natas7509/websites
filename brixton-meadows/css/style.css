@@ -95,11 +95,11 @@ nav {
 /* ARTISTS SECTION */
 
 .featured-artists {
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
 }
 .artists-grid {
   display: grid;
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
 }
 
 .artists-item img,

@@ -68,7 +68,7 @@
 
 .buttons button:hover {
   background-color: var(--light-color);
-  color: var(--dark-opacity);
+  color: var(--dark-color);
 }
 
 /* Backgorund Images */

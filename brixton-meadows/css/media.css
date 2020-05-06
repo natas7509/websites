@@ -6,7 +6,7 @@
   }
 
   .slide.current .content {
-    transform: translateY(-300px);
+    transform: translateY(-330px);
     border-top-right-radius: 0;
   }
 }
