@@ -1,0 +1,51 @@
+/* MOBILE */
+
+#schedule {
+  background: url(../images/schedule.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+  color: var(--light-color);
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 2.5rem 0;
+  font-size: 0.9em;
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  background-color: #dddddd;
+  font-family: "Monserrat", sans-serif;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.content-table tbody tr th {
+  background-color: #b6b6b6;
+  text-align: left;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid var(--light-color);
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: var(--light-color);
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 3px solid #b6b6b6;
+  /* background-color: var(--light-color); */
+}
+
+.content-table th,
+.content-table td {
+  padding: 1rem;
+}

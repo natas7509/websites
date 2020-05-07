@@ -1,4 +1,6 @@
-// NAV SLIDE-IN =====================================================
+// GLOBAL =====================================================
+
+// NAV SLIDE-IN
 
 // Function to select elements
 const selectElement = (e) => document.querySelector(e);

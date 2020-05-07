@@ -99,10 +99,6 @@
   #showcase {
     height: 100vh;
   }
-
-  /* .bill-card img:hover {
-    transform: scale(1.7;
-  } */
 }
 
 /*  ===================================== IPAD PRO 10.5 INCH ==========================  */
@@ -123,5 +119,19 @@
   #social .social i {
     margin: 0 5rem;
     font-size: 2.5vw;
+  }
+
+  /* ARTISTS.HTML */
+
+  #lightbox.active img {
+    max-width: 60%;
+  }
+
+  .bill-card img {
+    transition: 300ms ease-in;
+  }
+
+  .bill-card img:hover {
+    transform: scale(1.02);
   }
 }

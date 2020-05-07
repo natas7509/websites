@@ -1,0 +1,39 @@
+/* main image credit by tony hernandez on Unsplash */
+
+/* MOBILE */
+
+#vendors {
+  background: url(../img-vendors/55Bar.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+  color: var(--light-color);
+}
+
+#vendors .showcase-content {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.bill-card {
+  position: relative;
+}
+
+.overlay-text {
+  color: var(--light-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  padding: 0 1rem;
+  margin-bottom: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+}

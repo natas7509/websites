@@ -4,6 +4,9 @@
 @import "config.css";
 @import "utilities.css";
 @import "artists.css";
+@import "schedule.css";
+@import "vendors.css";
+@import "tickets.css";
 @import "media.css";
 
 *,
