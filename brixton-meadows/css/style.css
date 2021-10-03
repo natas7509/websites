@@ -24,8 +24,8 @@ html {
 
 body {
   font-family: "Crimson Text", serif;
-  font-size: 1.8rem;
-  line-height: 1.3;
+  font-size: 2rem;
+  line-height: 1.5;
   color: var(--dark-color);
 }
 
@@ -97,12 +97,15 @@ nav {
 
 /* ARTISTS SECTION */
 
-.featured-artists {
-  /* margin: 0 2rem; */
+.featured-artists h1, p {
+  padding: 2rem 0 4rem;
 }
+
+
 .artists-grid {
   display: grid;
   /* margin: 3rem 0; */
+  
 }
 
 .artists-item img,
@@ -115,6 +118,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3rem;
   height: 10rem;
 }
 
@@ -160,7 +164,8 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 1rem;
+  padding: 3rem 0;
+  margin-top: 4rem;
 }
 
 #footer .list ul li {
@@ -170,6 +175,7 @@ p {
   font-size: 1.1rem;
   text-transform: uppercase;
 }
+
 
 .light {
   width: 80%;
@@ -182,7 +188,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 1.24rem;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   border-top: solid 1px var(--border-color);
   color: var(--light-color);
 }
